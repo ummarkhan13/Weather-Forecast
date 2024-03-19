@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather My Project</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="loader">
+        <div class="big">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="text">LOADING</div>
+    </div>
+    <div class="weather">
+        <div class="dynamic_weather_elements"></div>
+        <h1>Weather Forecast</h1>
+        <div class="outer">
+            <div class="container1">
+                <div class="searchbar">
+                    <input id="search" type="text" placeholder="Enter The Location" oninput="input_changed()">
+                    <div class="img_container" onclick="current_location()">
+                        <img src="location.png">
+                    </div>
+                    <div tabindex="0" class="place_list" id="list"></div>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="section1">
+                    <div class="box" id="box4">
+                        <div class="day">
+                            <div class="left_container">
+                                <div class="date"></div>
+                                <div class="status"></div>
+                            </div>
+                            <div class="right_container">
+                                <div class="icon_container">
+                                    <img>
+                                </div>
+                                <div class="temperature">
+                                    <div class="max_temp"></div>
+                                    <div class="min_temp"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day">
+                            <div class="left_container">
+                                <div class="date"></div>
+                                <div class="status"></div>
+                            </div>
+                            <div class="right_container">
+                                <div class="icon_container">
+                                    <img>
+                                </div>
+                                <div class="temperature">
+                                    <div class="max_temp"></div>
+                                    <div class="min_temp"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day">
+                            <div class="left_container">
+                                <div class="date"></div>
+                                <div class="status"></div>
+                            </div>
+                            <div class="right_container">
+                                <div class="icon_container">
+                                    <img>
+                                </div>
+                                <div class="temperature">
+                                    <div class="max_temp"></div>
+                                    <div class="min_temp"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section2">
+                    <div class="container2">
+                        <div class="box" id="box1"></div>
+                        <div class="box" id="box2">
+                            <div class="icon_container">
+                                <img />
+                            </div>
+                            <div class="text"></div>
+                        </div>
+                    </div>
+                    <div class="container3">
+                        <div class="box" id="box3">
+                            <div class="hourly_weather">
+                                <div class="temperature"></div>
+                                <div class="icon_container"><img> </div>
+                                <div class="time"></div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="hourly_weather">
+                                <div class="temperature"></div>
+                                <div class="icon_container"><img> </div>
+                                <div class="time"></div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="hourly_weather">
+                                <div class="temperature"></div>
+                                <div class="icon_container"><img> </div>
+                                <div class="time"></div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="hourly_weather">
+                                <div class="temperature"></div>
+                                <div class="icon_container"><img> </div>
+                                <div class="time"></div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="hourly_weather">
+                                <div class="temperature"></div>
+                                <div class="icon_container"><img> </div>
+                                <div class="time"></div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="hourly_weather">
+                                <div class="temperature"></div>
+                                <div class="icon_container"><img> </div>
+                                <div class="time"></div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="hourly_weather">
+                                <div class="temperature"></div>
+                                <div class="icon_container"><img> </div>
+                                <div class="time"></div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="hourly_weather">
+                                <div class="temperature"></div>
+                                <div class="icon_container"><img> </div>
+                                <div class="time"></div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="hourly_weather">
+                                <div class="temperature"></div>
+                                <div class="icon_container"><img> </div>
+                                <div class="time"></div>
+                                <div class="text"></div>
+                            </div>
+                            <div class="hourly_weather">
+                                <div class="temperature"></div>
+                                <div class="icon_container"><img> </div>
+                                <div class="time"></div>
+                                <div class="text"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
